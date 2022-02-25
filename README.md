@@ -46,3 +46,26 @@
   <li>untuk custom-oder -> nama foldernya ada inisial -custom-order</li>
 </ul>
   
+<h2>CRUD BRIEF</h2>
+<p style="font-weight: bold;">Create</p>
+<p>setiap form brief di handle oleh table database yang berbeda</p>
+<p>pengiriman data ke databse tidak menggunakan <a href="https://www.w3schools.com/sql/sql_join_inner.asp" target="_blank">inner join SQL</a></p>
+<p>jadi, jika ada penambahan input pada form, anda harus melakukan update juga terhadap table database yang terkait</p>
+
+<p style="font-weight: bold;">Read</p>
+<p>yang perlu diperhatikan adalah, beberapa rules tidak bisa mengakses atau melihat database<p>
+  <ul>
+    <li>user -> tidak bisa melihat database</li>
+    <li>sales -> hanya bisa melihat data order brief</li>
+    <li>super-admin -> bisa melihat, mengedit, delete semua database </li>
+    <li>reseller -> hanya bisa melihat data order brief berdasarkan kode referralnya</li>
+  </ul>
+<p> Jadi, setiap dashboard berisi informasi yang berbeda</p>
+<p> jika anda ingin merubah informasi tersebut, anda hanya perlu merubah query nya saja</p>
+
+<p style="font-weight: bold;">Update</p>
+<p>Update pada form brief hanya dapat dilakukan oleh super-admin</p>
+<p>script yang digunakan sama, hanya saja inputan yang di masukkan berbeda</p>
+
+<p style="font-weight: bold;"Delete</p>
+<p>delete terhadap form, data register klien, data tim sales, data reseller hanya dapat dilakukan oleh super-admin</p>
