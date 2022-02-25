@@ -28,3 +28,21 @@
 <p>pada halaman dashboard, anda hanya perlu melakukan konfigurasi pada table database yang ingin ditampilkan pada setiap rule (sales, super-admin, reseller)</p>
 <p>pada rule user, tidak perlu menmapilkan database apapun, karena userlah yang menginput database nya sendiri (smm, ads, web, custom order dll).
   
+<h2>Folder Untuk Gambar</h2>
+<p>Setiap user yang melakukan upload berupa gambar akan di simpan di dalam sebuah folder yang otomatis akan membuat folder didalamnya dengan nama user tersebut</p>
+<p>contoh beberapa folder yang menampung inputan user</p>
+<ul>
+  <li>lampiran-foto-produk</li>
+  <li>lampiran-logo</li>
+  <li>lampiran-testimoni</li>
+  <li>lampiran-lainnya</li>
+</ul>
+<p>Setiap form di handle oleh folder yang berbeda, hal ini untuk mempermudah saat dilakukan query</p>
+<p>untuk mengetahui perbedaanya, anda hanya perlu melihat nama folder yang ada di root</p>
+<ul>
+  <li>untuk brief smm -> nama foldernya tidak ada inisial apa-apa(contohnya seperti di atas)</li>
+  <li>untuk brief ads -> nama foldernya ada inisal -ads</li>
+  <li>untuk brief web -> nama foldernya ada inisial -web</li>
+  <li>untuk custom-oder -> nama foldernya ada inisial -custom-order</li>
+</ul>
+  
